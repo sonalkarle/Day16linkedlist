@@ -1,36 +1,43 @@
-using Linkedlist;
 using NUnit.Framework;
-using System;
-using System.Collections.Generic;
+using Linkedlist;
 
-namespace linkedlisttestcase1
+namespace NUnitTestProject
 {
+
     public class Tests
     {
-
-        [SetUp]
-        public void Setup()
+        ///<summary>
+        ///TC1: Test link list method
+        ///</summary>
+        [Test]
+        public void Create_simplelinkedlist_Checkthe_headiscorrectposition()
         {
+            LinkedList List = new LinkedList();
+            List.Append(56);
+            List.Append(30);
+            List.Append(70);
+            List.Display();
+            int head = 56;
+
+            Assert.AreEqual(head, List.head.data);
+
         }
 
-      
         /// <summary>
-        /// TC-2 Test Linked List
+        /// TC-2 Test Linked List for Add method
         /// </summary>
         [Test]
-        public void Given3Number_WhenAddedToLinkedList_ShouldBeAddedToTop()
+        public void Given3Number_WhenAddedToLinkedList_ShouldBeAddedToTop_By_checking_Headposition()
         {
-           
-            LinkedList list = new LinkedList();
-            list.AddNodeAtStart(70);
-            list.AddNodeAtStart(30);
-            list.AddNodeAtStart(56);
-            list.Display();
-            bool result = list.head.Equals(56) &&
-                             list.head.getNext().Equals(30) &&
-                             list.tail.Equals(70);
-            Assert.True(result);
-        }
 
-    }
-}
+            LinkedList List = new LinkedList();
+            List.AddNodeAtStart(70);
+            List.AddNodeAtStart(30);
+            List.AddNodeAtStart(56);
+            List.Display();
+            int head = 56;
+
+            Assert.AreEqual(head, List.head.data);
+
+
+        }
