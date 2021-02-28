@@ -110,59 +110,7 @@ namespace NUnitTestProject
             bool actual = List.Search(70);
             Assert.AreEqual(expected, actual);
         }
-        /// <summary>
-        /// TC7:Search node is present or not
-        /// </summary>
-        [Test]
-        public void Givenlist_finddata30_fromlist()
-        {
-            LinkedList staticlinkedList = new LinkedList();
-            Node node56 = new Node(56);
-            Node node30 = new Node(30);
-            Node node70 = new Node(70);
-            node56.next = node30;
-            node30.next = node70;
-            staticlinkedList.head = node56;
-            bool actual = staticlinkedList.Search(30);
-            bool expected = true;
-            Assert.AreEqual(expected, actual);
-        }
-        /// <summary>
-        /// TC8:Check number is added in list or not
-        /// </summary>
-        [Test]
-        public  void GivenNumber_AddBetween_linkedlist ()
-        {
-            LinkedList linkedListAfterNode = new LinkedList();
-            linkedListAfterNode.Append(56);
-            linkedListAfterNode.Append(30);
-            linkedListAfterNode.Append(70);
-            linkedListAfterNode.AddNodeAfterNode(40, 30);
-            bool actul = linkedListAfterNode.Search(40);
-            bool expected = true;
-            Assert.AreEqual(expected, actul);
-
-
-        }
-        /// <summary>
-        /// TC-9:Check number is deleted or not
-        /// </summary>
-        [Test]
-        public void Number_Delete_Inmiddle_datais40()
-        {
-            LinkedList linkedListAfterNode = new LinkedList();
-            linkedListAfterNode.Append(56);
-            linkedListAfterNode.Append(30);
-            linkedListAfterNode.Append(70);
-            linkedListAfterNode.AddNodeAfterNode(40, 30);
-            linkedListAfterNode.DeleteNodeWithdata(40);
-            bool actul = linkedListAfterNode.Search(40);
-            bool expected = false;
-            Assert.AreEqual(expected, actul);
-
-
-
-        }
+       
         
 
 
