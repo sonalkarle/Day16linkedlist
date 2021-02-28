@@ -7,29 +7,29 @@ namespace Linkedlist
     {
         static void Main(string[] args)
         {
-             
-               ///<summary>
-               ///UC1: Create simple linked list
-               ///UC3: Append details in list 
-               ///</summary>
-               Console.WriteLine("Welcome to linked list");
-               LinkedList list = new LinkedList();
-               Node node1 = new Node(56);
-               Node node2 = new Node(30);
-               Node node3 = new Node(70);
-               list.AddNode(node1);
-               list.AddNode(node2);
-               list.AddNode(node3);
-               list.Display();
-            
+
+            ///<summary>
+            ///UC1: Create simple linked list
+            ///UC3: Append details in list 
+            ///</summary>
+            Console.WriteLine("Welcome to linked list");
+            LinkedList list = new LinkedList();
+            Node node1 = new Node(56);
+            Node node2 = new Node(30);
+            Node node3 = new Node(70);
+            list.AddNode(node1);
+            list.AddNode(node2);
+            list.AddNode(node3);
+            list.Display();
+
             ///<summary>
             ///UC2: Create linked list add the data from start
             ///</summay>
-           
-                list.AddNodeAtStart(70);
-                list.AddNodeAtStart(30);
-                list.AddNodeAtStart(56);
-                list.Display();
+
+            list.AddNodeAtStart(70);
+            list.AddNodeAtStart(30);
+            list.AddNodeAtStart(56);
+            list.Display();
 
 
             ///<summary>
@@ -48,23 +48,23 @@ namespace Linkedlist
             ///UC4: Add Node between First and last node
             ///</summary>
             Console.WriteLine("Add Node In Between first and last node ");
-               LinkedList newlist = new LinkedList();
-               newlist.Append(56);
-               newlist.Append(70);
-               newlist.AddNodeAfterNode(30, 56);
-               newlist.Display();
-            
+            LinkedList newlist = new LinkedList();
+            newlist.Append(56);
+            newlist.Append(70);
+            newlist.AddNodeAfterNode(30, 56);
+            newlist.Display();
+
 
 
             ///<summary>
             ///UC5: Delete the first node
             ///</summary>
-           
+
             Console.WriteLine("Delete First Node");
             list.Display();
             list.DeleteNodeAtFirst();
             list.Display();
-            
+
             ///<summary>
             ///UC6: Delete the last Node
             /// </summary>
@@ -73,7 +73,7 @@ namespace Linkedlist
             list.DeleteNodeAtLast();
             list.Display();
 
-            
+
 
             ///<summary>
             ///UC7: Search number from the Node
@@ -92,10 +92,8 @@ namespace Linkedlist
             if (staticlinkedList.Search(30))
             {
                 Console.WriteLine("Node found");
-               
+
             }
-            
-             
             ///<summary>
             ///UC8: Add node 40 after 30 and display the details
             /// </summary>
@@ -106,19 +104,10 @@ namespace Linkedlist
             linkedListAfterNode.Append(70);
             linkedListAfterNode.AddNodeAfterNode(40, 30);
             linkedListAfterNode.Display();
-            
-            
-            ///<summary>
-            ///UC9: Delete the data from the middle 
-            /// </summary>
-            Console.WriteLine("Delete From Middle");
-            linkedListAfterNode.Display();
-            linkedListAfterNode.DeleteNodeWithdata(40);
-            linkedListAfterNode.Display();
 
-            
-           
-          
+
+
+
         }
     }
 }

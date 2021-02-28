@@ -144,25 +144,7 @@ namespace NUnitTestProject
 
 
         }
-        /// <summary>
-        /// TC-9:Check number is deleted or not
-        /// </summary>
-        [Test]
-        public void Number_Delete_Inmiddle_datais40()
-        {
-            LinkedList linkedListAfterNode = new LinkedList();
-            linkedListAfterNode.Append(56);
-            linkedListAfterNode.Append(30);
-            linkedListAfterNode.Append(70);
-            linkedListAfterNode.AddNodeAfterNode(40, 30);
-            linkedListAfterNode.DeleteNodeWithdata(40);
-            bool actul = linkedListAfterNode.Search(40);
-            bool expected = false;
-            Assert.AreEqual(expected, actul);
-
-
-
-        }
+       
         
 
 
