@@ -12,5 +12,9 @@ namespace Linkedlist
         {
             this.data = data;
         }
+        public Node getNext()
+        {
+            return next;
+        }
     }
 }
