@@ -7,7 +7,8 @@ namespace Linkedlist
    public class LinkedList
     {
         public Node head;
-        public void Add(int data)
+       
+        public void Append(int data)
         {
             Node node = new Node(data);
             if(this.head  == null)
@@ -23,7 +24,24 @@ namespace Linkedlist
                 }
                 temp.next = node;
             }
+            Console.WriteLine($"Added {data} at start of the linkedlist");
         }
+        public void AddNodeAtStart(int data)
+        {
+            Node node = new Node(data);
+            if (this.head == null)
+            {
+                this.head = node;
+            }
+            else
+            {
+                node.next = head;
+                head = node;
+            }
+            Console.WriteLine($"Added {data} at start of the linkedlist");
+        }
+
+      
         public void Display()
         {
             Node temp = head;
@@ -34,9 +52,17 @@ namespace Linkedlist
             }
             while(temp!=null)
             {
-                Console.WriteLine(temp.data + " ");
+                Console.Write(temp.data + " ");
+                if (temp.next != null)
+                {
+                    Console.Write("->");
+                }
                 temp = temp.next;
             }
+            Console.WriteLine();
+           
+            
         }
     }
 }
+

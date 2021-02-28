@@ -9,10 +9,17 @@ namespace Linkedlist
         {
             Console.WriteLine("Welcome to linked list");
             LinkedList list = new LinkedList();
-            list.Add(56);
-            list.Add(30);
-            list.Add(76);
+            list.Append(56);
+            list.Append(30);
+            list.Append(70);
             list.Display();
+
+
+           /* list.AddNodeAtStart(70);
+            list.AddNodeAtStart(30);
+            list.AddNodeAtStart(56);
+            list.Display();
+           */
         }
     }
 }
