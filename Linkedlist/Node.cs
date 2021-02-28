@@ -11,11 +11,9 @@ namespace Linkedlist
         public Node(int data)
         {
             this.data = data;
+            this.next = null;
         }
-        public Node getNext()
-        {
-          
-            return next;
-        }
+       
+        
     }
 }
