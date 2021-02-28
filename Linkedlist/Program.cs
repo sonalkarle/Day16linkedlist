@@ -56,67 +56,6 @@ namespace Linkedlist
             
 
 
-            ///<summary>
-            ///UC5: Delete the first node
-            ///</summary>
-           
-            Console.WriteLine("Delete First Node");
-            list.Display();
-            list.DeleteNodeAtFirst();
-            list.Display();
-            
-            ///<summary>
-            ///UC6: Delete the last Node
-            /// </summary>
-            Console.WriteLine("Delete Last Node ");
-            list.Display();
-            list.DeleteNodeAtLast();
-            list.Display();
-
-            
-
-            ///<summary>
-            ///UC7: Search number from the Node
-            /// </summary>
-            Console.WriteLine("Static Linked List:");
-            LinkedList staticlinkedList = new LinkedList();
-            Node node56 = new Node(56);
-            Node node30 = new Node(30);
-            Node node70 = new Node(70);
-            node56.next = node30;
-            node30.next = node70;
-            staticlinkedList.head = node56;
-            staticlinkedList.Display();
-            Console.WriteLine("Search for Node 30");
-            staticlinkedList.Display();
-            if (staticlinkedList.Search(30))
-            {
-                Console.WriteLine("Node found");
-               
-            }
-            
-             
-            ///<summary>
-            ///UC8: Add node 40 after 30 and display the details
-            /// </summary>
-            Console.WriteLine("Add Node After Node ");
-            LinkedList linkedListAfterNode = new LinkedList();
-            linkedListAfterNode.Append(56);
-            linkedListAfterNode.Append(30);
-            linkedListAfterNode.Append(70);
-            linkedListAfterNode.AddNodeAfterNode(40, 30);
-            linkedListAfterNode.Display();
-            
-            
-            ///<summary>
-            ///UC9: Delete the data from the middle 
-            /// </summary>
-            Console.WriteLine("Delete From Middle");
-            linkedListAfterNode.Display();
-            linkedListAfterNode.DeleteNodeWithdata(40);
-            linkedListAfterNode.Display();
-
-            
            
           
         }
