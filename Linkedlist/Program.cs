@@ -26,15 +26,28 @@ namespace Linkedlist
             ///UC2: Create linked list add the data from start
             ///</summay>
            
-            list.AddNodeAtStart(70);
+                list.AddNodeAtStart(70);
                 list.AddNodeAtStart(30);
                 list.AddNodeAtStart(56);
                 list.Display();
-            
-               ///<summary>
-               ///UC4: Add Node between First and last node
-               ///</summary>
-               Console.WriteLine("Add Node In Between first and last node ");
+
+
+            ///<summary>
+            ///UC3: Append linked list
+            ///</summary>
+            Console.WriteLine("Append the list");
+            LinkedList newlist1 = new LinkedList();
+            newlist1.Append(56);
+            newlist1.Append(70);
+            newlist1.Append(30);
+            newlist1.Display();
+
+
+
+            ///<summary>
+            ///UC4: Add Node between First and last node
+            ///</summary>
+            Console.WriteLine("Add Node In Between first and last node ");
                LinkedList newlist = new LinkedList();
                newlist.Append(56);
                newlist.Append(70);
